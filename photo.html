@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymus">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymus">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg">
+    </div>
+    <div class="wrapper-shadow">
+      <header class="wrapper-shadow__item page-header">
+        <div class="page-header__wrapper">
+          <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+            <ul class="main-navigation__list site-list">
+              <li class="site-list__item site-list__item--current">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фото и видео</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              </li>
+            </ul>
+            <div class="page-header__logo">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="84" alt="Город Седона">
+                </picture>
+              </a>
+              <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="wrapper-shadow__item page-photo">
+        <div class="page-photo__wrapper">
+          <div class="page-photo__promo">
+            <div class="page-photo__background-triangle"></div>
+          </div>
+          <h1 class="page-photo__title">Фото и видео</h1>
+          <p class="page-photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политеке и экономике.</p>
+          <ul class="page-photo__gallery gallery">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <p class="gallery__item-img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                    <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Вечерняя дорога">
+                  </picture>
+                </p>
+                <div class="gallery__description-position">
+                  <div class="gallery__description">Народные просторы</div>
+                  <p class="gallery__author">Автор фото: Борис</p>
+                  <p class="gallery__like">1350</p>
+                </div>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <p class="gallery__item-img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                    <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущие кактусы">
+                  </picture>
+                </p>
+                <div class="gallery__description-position">
+                  <div class="gallery__description">Местная растительность</div>
+                  <p class="gallery__author">Автор фото: Сергей</p>
+                  <p class="gallery__like">143</p>
+                </div>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <p class="gallery__item-img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                    <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Извилистая дорога">
+                  </picture>
+                </p>
+                <div class="gallery__description-position">
+                  <div class="gallery__description">Дорога на север</div>
+                  <p class="gallery__author">Автор фото: Петр</p>
+                  <p class="gallery__like">96</p>
+                <div>
+              </div></div></figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <p class="gallery__item-img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Вид каньона">
+                  </picture>
+                </p>
+                <div class="gallery__description-position">
+                  <div class="gallery__description">Мост дьявола</div>
+                  <p class="gallery__author">Автор фото: Антон</p>
+                  <p class="gallery__like">254</p>
+                </div>
+              </figure>
+            </li>
+          </ul>
+          <div class="page-photo__video"></div>
+        </div>
+      </main>
+      <footer class="wrapper-shadow__item page-footer">
+        <div class="page-footer__wrapper">
+          <b class="page-footer__visit">#Visitsedona</b>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item social__item--twitter">
+                <a class="social__link" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--facebook">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span>
+                  <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--youtube">
+                <a class="social__link" href="#"><span class="visually-hidden">Мы в Ю-Тюбе</span>
+                  <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__item">Разработано</p>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg width="40" height="50" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
